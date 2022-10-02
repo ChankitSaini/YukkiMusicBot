@@ -12,6 +12,7 @@ from datetime import datetime, timedelta
 from typing import Union
 
 from pyrogram import Client
+from pyrogram.enums import ChatMemberStatus
 from pyrogram.errors import (ChatAdminRequired,
                              UserAlreadyParticipant,
                              UserNotParticipant)
@@ -59,50 +60,45 @@ async def _clear_(chat_id):
 class Call(PyTgCalls):
     def __init__(self):
         self.userbot1 = Client(
-            name=config.STRING1[:10]
+            name="1" or config.STRING1[:10],
             api_id=config.API_ID,
             api_hash=config.API_HASH,
-            session_name=str(config.STRING1),
         )
         self.one = PyTgCalls(
             self.userbot1,
             cache_duration=100,
         )
         self.userbot2 = Client(
-            name=config.STRING2[:10]
+            name="2" or config.STRING2[:10],
             api_id=config.API_ID,
             api_hash=config.API_HASH,
-            session_name=str(config.STRING2),
         )
         self.two = PyTgCalls(
             self.userbot2,
             cache_duration=100,
         )
         self.userbot3 = Client(
-            name=config.STRING3[:10]
+            name="3" or config.STRING3[:10],
             api_id=config.API_ID,
             api_hash=config.API_HASH,
-            session_name=str(config.STRING3),
         )
         self.three = PyTgCalls(
             self.userbot3,
             cache_duration=100,
         )
         self.userbot4 = Client(
-            name=config.STRING4[:10]
+            name="4" or config.STRING4[:10],
             api_id=config.API_ID,
             api_hash=config.API_HASH,
-            session_name=str(config.STRING4),
         )
         self.four = PyTgCalls(
             self.userbot4,
             cache_duration=100,
         )
         self.userbot5 = Client(
-            name=config.STRING5[:10]
+            name="5" or config.STRING5[:10],
             api_id=config.API_ID,
             api_hash=config.API_HASH,
-            session_name=str(config.STRING5),
         )
         self.five = PyTgCalls(
             self.userbot5,
@@ -210,7 +206,7 @@ class Call(PyTgCalls):
                 get = await app.get_chat_member(chat_id, userbot.id)
             except ChatAdminRequired:
                 raise AssistantErr(_["call_1"])
-            if get.status == "banned" or get.status == "kicked":
+            if get.status == ChatMemberStatus.BANNED:
                 raise AssistantErr(
                     _["call_2"].format(userbot.username, userbot.id)
                 )
