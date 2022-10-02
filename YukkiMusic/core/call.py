@@ -63,6 +63,7 @@ class Call(PyTgCalls):
             name="1" or config.STRING1[:10],
             api_id=config.API_ID,
             api_hash=config.API_HASH,
+            session_string=config.STRING1[:10],
         )
         self.one = PyTgCalls(
             self.userbot1,
@@ -72,6 +73,7 @@ class Call(PyTgCalls):
             name="2" or config.STRING2[:10],
             api_id=config.API_ID,
             api_hash=config.API_HASH,
+            session_string=config.STRING2[:10],
         )
         self.two = PyTgCalls(
             self.userbot2,
@@ -81,6 +83,7 @@ class Call(PyTgCalls):
             name="3" or config.STRING3[:10],
             api_id=config.API_ID,
             api_hash=config.API_HASH,
+            session_string=config.STRING3[:10],
         )
         self.three = PyTgCalls(
             self.userbot3,
@@ -90,6 +93,7 @@ class Call(PyTgCalls):
             name="4" or config.STRING4[:10],
             api_id=config.API_ID,
             api_hash=config.API_HASH,
+            session_string=config.STRING4[:10],
         )
         self.four = PyTgCalls(
             self.userbot4,
@@ -99,6 +103,7 @@ class Call(PyTgCalls):
             name="5" or config.STRING5[:10],
             api_id=config.API_ID,
             api_hash=config.API_HASH,
+            session_string=config.STRING5[:10],
         )
         self.five = PyTgCalls(
             self.userbot5,
