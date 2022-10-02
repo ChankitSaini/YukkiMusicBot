@@ -137,7 +137,7 @@ play_10: "**Youtube播放列表功能**\n\n选择要在其中播放整个Youtube
 play_11: "📎标题： **{0}\n\n⏳时长：** {1} 分钟"
 play_12: "**Spotify播放模式**\n\n请求者：- {0}"
 play_13: "**Apple播放列表**\n\n请求者：- {0}"
-play_14: "**无法验证 URL。**\nBot 想知道此 URL 是否属于以下任何平台：Youtube、AppleMusic、Spotify、Resso 和 Soundcloud。\n\n您可以将 /stream 用于 M3u8 或远程链接。"
+play_14: "**无法验证 URL。**\nBot 想知道此 URL 是否属于以下任何平台：Youtube、AppleMusic、Spotify、Resso 和 SoundCloud。\n\n您可以将 /stream 用于 M3u8 或远程链接。"
 play_15: "**检测到实时流**\n\n系统已将您的曲目链接检测为实时流。想玩直播吗？"
 play_16: "无法获取曲目详细信息, 尝试播放另一个"
 play_17: "无法播放这种类型的 spotify 查询！\n\n我只能播放 spotify 曲目、专辑、艺术家和播放列表"

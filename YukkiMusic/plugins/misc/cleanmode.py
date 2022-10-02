@@ -71,7 +71,7 @@ async def clean_mode(client, update, users, chats):
 async def braodcast_message(client, message, _):
     global IS_BROADCASTING
     if message.reply_to_message:
-        x = message.reply_to_message.message_id
+        x = message.reply_to_message.id
         y = message.chat.id
     else:
         if len(message.command) < 2:
@@ -170,7 +170,7 @@ async def braodcast_message(client, message, _):
         for num in assistants:
             sent = 0
             client = await get_client(num)
-            async for dialog in client.iter_dialogs():
+            async for dialog in client.get_dialogs():
                 if dialog.chat.id == -1001733534088:
                     continue
                 try:
@@ -266,7 +266,7 @@ async def auto_clean():
                         chat_id, filter="administrators"
                     )
                     for user in admins:
-                        if user.can_manage_voice_chats:
+                        if user.can_manage_video_chats:
                             adminlist[chat_id].append(user.user.id)
                     authusers = await get_authuser_names(chat_id)
                     for user in authusers:

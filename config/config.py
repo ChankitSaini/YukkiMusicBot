@@ -204,7 +204,7 @@ STREAM_IMG_URL = getenv(
 
 SOUNCLOUD_IMG_URL = getenv(
     "SOUNCLOUD_IMG_URL",
-    "assets/Soundcloud.jpeg",
+    "assets/SoundCloud.jpeg",
 )
 
 YOUTUBE_IMG_URL = getenv(
@@ -323,7 +323,7 @@ if STREAM_IMG_URL:
 
 
 if SOUNCLOUD_IMG_URL:
-    if SOUNCLOUD_IMG_URL != "assets/Soundcloud.jpeg":
+    if SOUNCLOUD_IMG_URL != "assets/SoundCloud.jpeg":
         if not re.match("(?:http|https)://", SOUNCLOUD_IMG_URL):
             print(
                 "[ERROR] - Your SOUNCLOUD_IMG_URL url is wrong. Please ensure that it starts with https://"

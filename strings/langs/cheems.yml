@@ -149,7 +149,7 @@ play_10 : "**Youmtube Plamylist Feamture**\n\nSelect the modem in whimch you wam
 play_11 : "📎Timtle: **{0}\n\n⏳Dumration:** {1} mins"
 play_12 : "**Spomtify Plamy Momde**\n\nRequested by:- {0}" 
 play_13 : "**Ampple Plamylists**\n\nRequested by:- {0}"
-play_14 : "**Unable to verify the URL.**\nBot wonders if this url belongs to any of the following platforms: Youtube, AppleMusic, Spotify, Resso and Soundcloud.\n\nYou can use /stream for M3u8 or Remote Links."
+play_14 : "**Unable to verify the URL.**\nBot wonders if this url belongs to any of the following platforms: Youtube, AppleMusic, Spotify, Resso and SoundCloud.\n\nYou can use /stream for M3u8 or Remote Links."
 play_15 : "**Limve Stream Detemcted**\n\nSystems hamve detemcted youmr tramck limnk as limve stream. wamnt to plamy limve stream ?"
 play_16 : "Faimled to femtch tramck detaimls. Try plamying any othemr." 
 play_17 : "Umnable to plamy thims typem of spomtify quemry!\n\nI can only plamy spomtify tramcks, albums, artimsts and plamylists"

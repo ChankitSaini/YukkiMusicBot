@@ -68,7 +68,7 @@ admin_27 : "Loop Play qeyri-aktiv edilib"
 
 # Start
 start_1 : "Məni {0}-da olduğunuz üçün təşəkkür edirəm.\n{1} sağdır.\n\nHər hansı yardım və ya yardım üçün dəstək qrupumuzu və kanalımızı yoxlayın."
-start_2 : "Salam, mənim adım {0}.\n\nMənim bəzi faydalı xüsusiyyətləri olan teleqram yayım botuyam. Youtube, Spotify, Resso, AppleMusic, Soundcloud və s. kimi platformaları istifadə edirəm.\n\nMəni qruplarınıza əlavə etməkdən çəkinməyin."
+start_2 : "Salam, mənim adım {0}.\n\nMənim bəzi faydalı xüsusiyyətləri olan teleqram yayım botuyam. Youtube, Spotify, Resso, AppleMusic, SoundCloud və s. kimi platformaları istifadə edirəm.\n\nMəni qruplarınıza əlavə etməkdən çəkinməyin."
 start_3 : "Xoş gəlmisiniz {0}\n\nİşləmək üçün **admin icazəsinə** ehtiyacım yoxdur ( tələb olunana qədər).\n\nAssistent İstifadəçi Adı:- @{1}\nAssistent ID-si:- {2} "
 start_4 : "{0} Sahibi[{1}] indicə söhbətinizə qoşulub."
 start_5 : "{0} adlı istifadəçinin Sudo İstifadəçisinin[{1}] üzvü indicə söhbətinizə qoşulub."
@@ -142,7 +142,7 @@ play_10 : "**Youtube Pleylist Xüsusiyyəti**\n\nBütün Youtube Pleylistini oxu
 play_11 : "📎Başlıq: **{0}\n\n⏳Müddət:** {1} Dəqiqə"
 play_12 : "**Spotify Play Mode**\n\nTələb:- {0}"
 play_13 : "**Apple Playlists**\n\nTələb:- {0}"
-play_14 : "**URL-i yoxlamaq mümkün olmadı.**\nBot bu url-in aşağıdakı platformalardan hər hansı birinə aid olub-olmaması ilə maraqlanır: Youtube, AppleMusic, Spotify, Resso və Soundcloud.\n\nM3u8 və ya Uzaqdan Linklər üçün /stream istifadə edə bilərsiniz. ."
+play_14 : "**URL-i yoxlamaq mümkün olmadı.**\nBot bu url-in aşağıdakı platformalardan hər hansı birinə aid olub-olmaması ilə maraqlanır: Youtube, AppleMusic, Spotify, Resso və SoundCloud.\n\nM3u8 və ya Uzaqdan Linklər üçün /stream istifadə edə bilərsiniz. ."
 play_15 : "**Canlı Yayım Aşkarlandı**\n\nSistemlər trek linkinizi canlı yayım kimi aşkarladı. Canlı yayımı oynamaq istəyirsiniz?"
 play_16 : "Toz təfərrüatlarını əldə etmək alınmadı. Başqa birini çalmağa cəhd edin."
 play_17 : "Bu cür spotify sorğusunu oxutmaq mümkün deyil!\n\nMən yalnız spotify musiqilərini, albomlarını, ifaçılarını və çalğı siyahılarını oxuya bilərəm"

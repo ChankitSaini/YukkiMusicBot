@@ -115,7 +115,7 @@ pprint "\nMONGO DB URI: "; color_reset; read mongo_db
 pprint "\nLOG GROUP ID: "; color_reset; read logger
 pprint "\nPYROGRAM STRING SESSION OF ASSISTANT ACCOUNT: "; color_reset; read string_session
 pprint "\nMUSIC BOT NAME: "; color_reset; read mbt
-pprint "\nOwner Id:"; color_reset; read ownid
+pprint "\nOwner ID:"; color_reset; read ownid
 
 pprint "\n\nProcessing your vars, Wait a while!" "cgreen"
 

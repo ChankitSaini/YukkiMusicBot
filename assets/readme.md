@@ -25,9 +25,9 @@ Stream.jpeg - Thumbnail Image to be send when someone plays M3u8 or live links o
 - > If you want to change thumb images, make sure your file name "Stream.jpeg" remains same or alternatively you can add a var <br><br> `STREAM_IMG_URL` - Use telegraph link
 
 ```console
-Soundcloud.jpeg - Thumbnail Image to be when send someone plays music from soundcloud.
+SoundCloud.jpeg - Thumbnail Image to be when send someone plays music from SoundCloud.
 ```
-- > If you want to change thumb images, make sure your file name "Soundcloud.jpeg" remains same or alternatively you can add a var <br><br> `SOUNCLOUD_IMG_URL` - Use telegraph link
+- > If you want to change thumb images, make sure your file name "SoundCloud.jpeg" remains same or alternatively you can add a var <br><br> `SOUNCLOUD_IMG_URL` - Use telegraph link
 
 ```console
 Youtube.jpeg - If Thumbnail Generator fails anyhow then bot will send this image
