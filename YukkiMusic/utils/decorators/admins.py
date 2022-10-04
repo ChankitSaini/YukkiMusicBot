@@ -127,6 +127,9 @@ def AdminActual(mystic):
                         privileges=ChatPrivileges.can_manage_video_chat,
                     ):
                         admins.append(m)
+            except Exception as e:
+                print(e)
+                pass
             if member.id not in adminid:
                 return await message.reply(_["general_5"])
         return await mystic(client, message, _)
