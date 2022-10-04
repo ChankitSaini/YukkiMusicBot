@@ -266,7 +266,9 @@ async def auto_clean():
                     adminlist[chat_id] = []
                     admins = []
                     async for m in app.get_chat_members(
-                        chat_id, filter=ChatMembersFilter.ADMINISTRATORS
+                        chat_id, 
+                        filter=ChatMembersFilter.ADMINISTRATORS, 
+                        privileges=ChatPrivileges.can_manage_video_chat,
                     ):
                         admins.append(m)
                     for user in admins:
