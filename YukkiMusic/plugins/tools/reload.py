@@ -40,7 +40,7 @@ async def reload_admin_cache(client, message: Message, _):
         async for m in app.get_chat_members(
             chat_id, 
             filter=ChatMembersFilter.ADMINISTRATORS,
-            privileges=ChatPrivileges.can_manage_video_chat,
+            privileges=ChatPrivileges(can_manage_video_chat=True),
             ):
             admins.append(m)
         authusers = await get_authuser_names(chat_id)
