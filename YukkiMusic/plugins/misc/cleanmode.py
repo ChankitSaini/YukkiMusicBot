@@ -270,7 +270,7 @@ async def auto_clean():
                     ):
                         admins.append(m)
                     for user in admins:
-                        if user.ChatPrivileges.can_manage_video_chats:
+                        if user.privileges=ChatPrivileges.can_manage_video_chats:
                             adminlist[chat_id].append(user.user.id)
                     authusers = await get_authuser_names(chat_id)
                     for user in authusers:
