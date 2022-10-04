@@ -11,7 +11,7 @@ import asyncio
 from datetime import datetime, timedelta
 
 from pyrogram import filters
-from pyrogam.enums import ChatMembersFilter
+from pyrogram.enums import ChatMembersFilter
 from pyrogram.errors import FloodWait
 from pyrogram.raw import types
 
