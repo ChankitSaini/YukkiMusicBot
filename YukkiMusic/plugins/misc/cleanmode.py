@@ -12,6 +12,7 @@ from datetime import datetime, timedelta
 
 from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
+from pyrogram.types import ChatPrivileges
 from pyrogram.errors import FloodWait
 from pyrogram.raw import types
 
@@ -269,7 +270,7 @@ async def auto_clean():
                     ):
                         admins.append(m)
                     for user in admins:
-                        if user.can_manage_video_chats:
+                        if user.ChatPrivileges.can_manage_video_chats:
                             adminlist[chat_id].append(user.user.id)
                     authusers = await get_authuser_names(chat_id)
                     for user in authusers:

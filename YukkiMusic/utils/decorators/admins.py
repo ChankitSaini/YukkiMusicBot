@@ -8,6 +8,7 @@
 # All rights reserved.
 
 from pyrogram.enums import ChatType
+from pyrogram.types import ChatPrivileges
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import adminlist
@@ -118,7 +119,7 @@ def AdminActual(mystic):
                 )
             except:
                 return
-            if not member.can_manage_video_chats:
+            if not member.ChatPrivileges.can_manage_video_chats:
                 return await message.reply(_["general_5"])
         return await mystic(client, message, _)
 
@@ -153,7 +154,7 @@ def ActualAdminCB(mystic):
                 return await CallbackQuery.answer(
                     _["general_5"], show_alert=True
                 )
-            if not a.can_manage_video_chats:
+            if not a.ChatPrivileges.can_manage_video_chats:
                 if CallbackQuery.from_user.id not in SUDOERS:
                     token = await int_to_alpha(
                         CallbackQuery.from_user.id
