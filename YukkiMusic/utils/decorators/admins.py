@@ -119,8 +119,15 @@ def AdminActual(mystic):
                 )
             except:
                 return
-            if member not in (ChatMember.status=ADMINISTRATOR and privileges=ChatPrivileges.can_manage_video_chats):
-            #if not member.ChatPrivileges.can_manage_video_chats:
+            try:
+                adminid = []
+                async for m in app.get_chat_members(
+                        chat_id, 
+                        filter=ChatMembersFilter.ADMINISTRATORS, 
+                        privileges=ChatPrivileges.can_manage_video_chat,
+                    ):
+                        admins.append(m)
+            if member.id not in adminid:
                 return await message.reply(_["general_5"])
         return await mystic(client, message, _)
 
