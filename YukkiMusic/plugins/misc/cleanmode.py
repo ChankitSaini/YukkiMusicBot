@@ -263,9 +263,11 @@ async def auto_clean():
             for chat_id in served_chats:
                 if chat_id not in adminlist:
                     adminlist[chat_id] = []
-                    admins = await app.get_chat_members(
+                    admins = []
+                    async for m in app.get_chat_members(
                         chat_id, filter=ChatMembersFilter.ADMINISTRATORS
-                    )
+                    ):
+                        admins.append(m)
                     for user in admins:
                         if user.can_manage_video_chats:
                             adminlist[chat_id].append(user.user.id)

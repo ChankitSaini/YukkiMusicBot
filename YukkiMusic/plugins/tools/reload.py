@@ -30,14 +30,17 @@ RESTART_COMMAND = get_command("RESTART_COMMAND")
 @app.on_message(
     filters.command(RELOAD_COMMAND)
     & filters.group
-
     & ~BANNED_USERS
 )
 @language
 async def reload_admin_cache(client, message: Message, _):
     try:
         chat_id = message.chat.id
-        admins = await app.get_chat_members(chat_id, filter=ChatMembersFilter.ADMINISTRATORS)
+        admins = []
+        async for m in app.get_chat_members(
+            chat_id, filter=ChatMembersFilter.ADMINISTRATORS
+            ):
+            admins.append(m)
         authusers = await get_authuser_names(chat_id)
         adminlist[chat_id] = []
         for user in admins:
@@ -57,7 +60,6 @@ async def reload_admin_cache(client, message: Message, _):
 @app.on_message(
     filters.command(RESTART_COMMAND)
     & filters.group
-
     & ~BANNED_USERS
 )
 @AdminActual

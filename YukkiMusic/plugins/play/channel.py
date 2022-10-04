@@ -60,9 +60,11 @@ async def playmode_(client, message: Message, _):
         if chat.type != ChatType.CHANNEL:
             return await message.reply_text(_["cplay_5"])
         try:
-            admins = await app.get_chat_members(
-                chat.id, filter=ChatMembersFilter.ADMINISTRATORS
-            )
+            admins = []
+            async for m in app.get_chat_members(
+                chat_id, filter=ChatMembersFilter.ADMINISTRATORS
+                ):
+                admins.append(m)
         except:
             return await message.reply_text(_["cplay_4"])
         for users in admins:
